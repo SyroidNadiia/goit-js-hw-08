@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/SyroidNadiia/goit-js-hw-08",
+  "homepage": "https://SyroidNadiia.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "https://github.com/SyroidNadiia/goit-js-hw-08"
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@vimeo/player": "^2.18.0",
+    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.12.1"
   },
