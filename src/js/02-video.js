@@ -11,7 +11,7 @@ savedTime();
 player.on('timeupdate', throttle(onSaveCurrentTime, 1000));
 
 function onSaveCurrentTime(data) {
-  const currentTime = JSON.stringify(data.seconds);
+  const currentTime = data.seconds;
   localStorage.setItem(STORAGE_KEY, currentTime);
 }
 
@@ -19,7 +19,7 @@ function savedTime() {
   const savedCurrentTime = localStorage.getItem(STORAGE_KEY);
 
   if (savedCurrentTime) {
-    const parseSavedCurrentTime = JSON.parse(savedCurrentTime);
+    const parseSavedCurrentTime = savedCurrentTime;
 
     player
       .setCurrentTime(parseSavedCurrentTime)
