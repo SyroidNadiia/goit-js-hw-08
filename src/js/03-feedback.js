@@ -7,11 +7,9 @@ const formData = {};
 const feedbackFormEL = document.querySelector('.feedback-form');
 const inputEl = document.querySelector('input');
 const textAreaEl = document.querySelector('textarea');
-// const btnEL = document.querySelector('button');
 
-feedbackFormEL.addEventListener('input', onTextInput);
+feedbackFormEL.addEventListener('input', throttle(onTextInput, 500));
 feedbackFormEL.addEventListener('submit', onFormSubmit);
-// btnEL.addEventListener('click', onBtnClick);
 
 onSavedData();
 
@@ -29,10 +27,6 @@ function onFormSubmit(event) {
   event.target.reset();
   localStorage.removeItem(STORAGE_KEY);
 }
-
-// function onBtnClick() {
-//   console.log('this is btn');
-// }
 
 function onSavedData() {
   const savedDataInLocal = localStorage.getItem(STORAGE_KEY);
