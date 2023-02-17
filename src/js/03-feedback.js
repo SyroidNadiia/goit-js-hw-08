@@ -20,6 +20,7 @@ function onTextInput(event) {
 }
 
 function onFormSubmit(event) {
+  console.log(formData);
   event.preventDefault();
   event.target.reset();
   localStorage.removeItem(STORAGE_KEY);
@@ -31,7 +32,7 @@ function onSavedData() {
 
     for (let key in savedFormData) {
       feedbackFormEL.elements[key].value = savedFormData[key];
-      console.log(feedbackFormEL.elements[key].value);
+      // console.log(feedbackFormEL.elements[key].value);
     }
   } catch (error) {
     console.log(error.name);
