@@ -1,15 +1,15 @@
 {
-  "name": "parcel-project-template",
+  "name": "goit-js-hw-08",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://SyroidNadiia.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "https://github.com/SyroidNadiia/goit-js-hw-08"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SyroidNadiia/goit-js-hw-08"
+    "url": "git+https://github.com/SyroidNadiia/goit-js-hw-08.git"
   },
   "keywords": [],
   "author": "Nadiia Syroid <shcherbelova@ukr.net>",
