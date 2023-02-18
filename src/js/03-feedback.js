@@ -28,7 +28,7 @@ function onFormSubmit(event) {
 
 function onSavedData() {
   try {
-    savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
     for (let key in savedFormData) {
       feedbackFormEL.elements[key].value = savedFormData[key];
